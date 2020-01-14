@@ -1,0 +1,52 @@
+//custom css props
+
+:root {
+--color-primary: rgba(89,168,1,0.93);
+
+--color-grey-dark-1: #333;
+--color-grey-dark-2: #777;
+--color-grey-dark-3: #999;
+--color-grey-light: #3A4653;
+--color-grey-lightest: #EBF3FA;
+}
+
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em;  //1100px
+$bp-medium: 56.25em; //900px
+$bp-small:  50.63em; //810px
+$bp-smallest:  31.25em; //5000px
+
+html {
+
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+
+  @media only screen and (max-width: 1000px) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: 890px) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 380px) {
+    font-size: 44%;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*, *::after, *::before { 
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-light);
+}
